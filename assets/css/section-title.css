@@ -1,0 +1,80 @@
+.addonskit-section-title-style-1, 
+.addonskit-section-title-style-2{
+    display: flex;
+    align-items: center;
+}
+
+.addonskit-section-title{
+    font-family: 'Urbanist';
+}
+
+.addonskit-section-title-style-1 .addonskit-section-title,
+.addonskit-section-title-style-2 .addonskit-section-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    background: linear-gradient(80.07deg, #47479F 0%, #9191D7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.addonskit-section-title-style-3 .addonskit-section-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #221F3F;
+}
+
+.addonskit-section-title-style-1 .addonskit-section-title{
+    margin: 0 15px;
+}
+
+.addonskit-section-title-style-2 .addonskit-section-title{
+    margin: 0 15px 0 0;
+}
+
+.addonskit-section-title-style-3{
+    position: relative;
+    display: inline-block;
+}
+
+.addonskit-section-title-border {
+    width: 66%;
+    height: 3px;
+    background: linear-gradient(80.07deg, #47479F 0%, #9191D7 100%);
+    position: relative;
+}
+
+.addonskit-section-title-border::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.addonskit-section-title-border::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ake-settings-saved {
+    margin-right: 10px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+#ake-spinner {
+    width: 14px;
+    display: inline-block;
+    float: left;
+    margin: 3px 5px 0 0;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1.2s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 1.2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.ake-dashboard-header-right .ake-btn {
+    background: #E6EAF5;
+    border-radius: 10px;
+    padding: 15px 25px;
+    border: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.ake-btn.ake-save-now {
+    background: #1BA4B6;
+    border: 2px solid #1BA4B6;
+    color: #ffffff;
+}
+.ake-btn.ake-save-now:hover{
+    background-color: transparent;
+    color: #1BA4B6;
+}
+button.ake-btn:focus {
+    outline: 0;
+}
+.ake-dashboard-tab {
+    display: none;
+}
+.ake-dashboard-tab.active {
+    display: block;
+}
+.ake-dashboard-tabs {
+    margin: 0;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.ake-dashboard-tabs li {
+    display: inline-block;
+}
+.ake-dashboard-tabs li a {
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+.ake-dashboard-tabs li a img {
+    margin-right: 10px;
+}
+.ake-dashboard-tabs li a.active {
+    color: #fff;
+}
+.ake-dashboard-tabs li a:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.ake-dashboard-tabs li.ake-tab-btn a img.ake-tab-image-active {
+    display: none;
+}
+.ake-dashboard-tabs li.ake-tab-btn a.active img.ake-tab-image-normal {
+    display: none;
+}
+.ake-dashboard-tabs li.ake-tab-btn a.active img.ake-tab-image-active {
+    display: flex;
+}
+.ake-dashboard-checkbox {
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #007585;
+    border-radius: 12px;
+    background: #F3FEFF;
+    justify-content: space-between;
+    /* margin: 10px; */
+    position: relative;
+    transition: .3s ease;
+    overflow: hidden;
+}
+.ake-dashboard-checkbox.selected {
+    background: #EAFDFF;
+    border: 1px solid #1BA4B6;
+    color: #1BA4B6;
+}
+.ake-dashboard-checkbox-text {
+    display: flex;
+    align-items: center;
+}
+.ake-elements-demo-link {
+    margin-left: 10px;
+}
+.ake-dashboard-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+.ake-dashboard-checkbox label {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+.ake-dashboard-checkbox label:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.ake-dashboard-checkbox label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+.ake-dashboard-checkbox input[type=checkbox]:checked+label:before {
+    background: #1BA4B6;
+    border: 1px solid #1BA4B6;
+}
+.ake-dashboard-checkbox input[type=checkbox]:checked+label:after {
+    display: block;
+}
+.ake-elements-enable {
+    display: block;
+    padding: 12px 27px;
+    background: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1BA4B6;
+    font-weight: 500;
+    margin-right: 20px;
+    border: 1px solid #1BA4B6;
+    transition: all .3s ease;
+}
+.ake-elements-enable:hover {
+    background: #1BA4B6;
+    border: 1px solid #1BA4B6;
+    color: #ffffff;
+}
+.ake-elements-disable {
+    display: block;
+    padding: 12px 27px;
+    border: 1px solid #F05D55;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #F05D55;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+.ake-elements-disable:hover {
+    border: 1px solid #F05D55;
+    background: #F05D55;
+    color: #ffffff;
+}
+.ake-elements-enable:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.ake-elements-disable:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.ake-elements-filter-text {
+    display: flex;
+}
+.ake-elements-filter-search {
+    height: 40px;
+    width: 220px;
+    max-width: 220px;
+    position: relative;
+}
+.ake-elements-filter-search input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #1BA4B6;
+    border-radius: 10px;
+    color: #3c434a;
+    font-size: 14px;
+    padding: 11px 18px;
+}
+.ake-elements-filter-search input:focus {
+    border: 1px solid #1BA4B6;
+    outline: 0;
+    box-shadow: none;
+}
+.ake-elements-filter-search input::placeholder {
+    color: #3c434a;
+}
+.ake-elements-filter-search input:-ms-input-placeholder {
+    color: #1BA4B6;
+}
+.ake-elements-filter-search input::-ms-input-placeholder {
+    color: #1BA4B6;
+}
+.ake-elements-filter-search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    line-height: 1;
+}
+.ake-dashboard-header-left h4 svg {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+.ake-dashboard-header-left h4 {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    margin: 0;
+}
+.ake-dashboard-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.ake-dashboard-header-right {
+    margin-right: 30px;
+}
+
+.ake-dashboard-tabs li a svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+.ake-dashboard-tabs li a.active {
+    background-color: #1BA4B6;
+}
+.ake-dashboard-tabs li a.active svg {
+    fill: #fff;
+}
+.ake-dashboard-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    flex-basis: 49%;
+    gap: 30px;
+}
+.ake-dashboard-box svg {
+	width: 35px;
+	height: 35px;
+}
+.ake-dashboard-home-tab {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: start;
+}
+.ake-dashboard-home-tab-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ake-dashboard-box h4 {
+    font-size: 22px;
+    margin: 10px 0 20px;
+}
+.ake-dashboard-box a {
+    text-decoration: none;
+    border: 2px solid #1BA4B6;
+    color: #333;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #1BA4B6;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .3s;
+    font-weight: 600;
+}
+.ake-dashboard-box a:hover{
+    background-color: #1BA4B6;
+    color: #fff;
+}
+.ake-element-filter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 45px;
+}
+.ake-element-filter-btn ul {
+    display: flex;
+}
+.ake-dashboard-checkbox-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 30px;
+}
+.ake-dashboard-checkbox {
+    flex-basis: 18%;
+    padding: 20px;
+}
+.ake-dashboard-checkbox-text p{
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0;
+    color: #007585;
+}
+#ake-element-filter-search-input {
+	border: 1px solid #1BA4B6;
+	padding: 7px 20px 12px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.ake-dashboard-tab svg {
+	max-width: 60%;
+	margin: auto;
+	display: block;
+	height: auto;
+	border: 1px solid #ddd;
+	padding: 30px;
+	margin-top: 30px;
+}
+.ake-dashboard-box svg {
+    width: 60px;
+    display: inherit;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.ake-dashboard-tabs li a.active svg path {
+	fill: #fff;
+}
+.ake-dashboard-checkbox-wrapper {
+    flex-basis: 18%;
+    cursor: pointer;
+}
+.ake-dashboard-checkbox:hover{
+    background-color: #fff;
+}
+#support {
+    text-align: center;
+}
+#support h4 {
+    font-size: 30px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    padding: 30px;
+}
+.ake-dashboard-tab img {
+    max-width: 800px;
+    display: block;
+    margin: 50px auto 0;
+    border: 1px solid #ddd;
+}

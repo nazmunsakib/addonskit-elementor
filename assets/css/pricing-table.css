@@ -1,0 +1,208 @@
+.addonskit-pricing.style-1 .addonskit-pricing-title {
+    padding: 35px 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #191919;
+    font-family: 'Urbanist';
+}
+
+.addonskit-pricing.style-2 .addonskit-pricing-title {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #221F3F;
+    margin-top: 15px;
+}
+
+.addonskit-pricing.style-1 {
+    background: #fff;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+.addonskit-pricing.style-2{
+    border: 1px solid #E7E7EB;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.addonskit-pricing.style-2 .addonskit-pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E7E7EB;
+}
+
+
+
+.addonskit-pricing.style-1 .addonskit-icon-price {
+    display: flex;
+    align-items: center;
+}
+
+.addonskit-pricing.style-1 .addonskit-pricing-icon {
+    width: 40%;
+    text-align: center;
+}
+
+.addonskit-pricing-tag{
+    font-family: 'Urbanist';
+}
+
+.addonskit-pricing.style-1 .addonskit-pricing-tag {
+    width: 60%;
+    background: #f0f3ff;
+    padding: 15px 10px;
+    color: #657EFF;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+}
+
+.addonskit-pricing.style-1 .addonskit-pricing-icon svg {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.addonskit-pricing.style-2 .addonskit-pricing-icon svg {
+    width: 40px;
+    margin-left: auto;
+}
+
+
+.addonskit-pricing-price,
+.addonskit-pricing-currency{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 62px;
+    letter-spacing: -1.08px;
+}
+
+.addonskit-pricing.style-2 .addonskit-pricing-price,
+.addonskit-pricing.style-2 .addonskit-pricing-currency{
+    color: #657EFF;
+}
+
+
+.addonskit-pricing-separator,
+.addonskit-pricing-period{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.addonskit-pricing.style-2 .addonskit-pricing-separator,
+.addonskit-pricing.style-2 .addonskit-pricing-period{
+    color: #221F3F;
+}
+
+.addonskit-pricing.style-1 span.addonskit-pricing-sub-title {
+    display: block;
+    padding: 30px 40px;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #191919;
+}
+
+.addonskit-pricing.style-1 .addonskit-pricing-info{
+    padding: 0 40px 25px;
+}
+
+.addonskit-pricing.style-2 .addonskit-pricing-info{
+    padding: 20px 0 30px;
+}
+
+.addonskit-pricing-info ul li{
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.32px;
+    color: #6D6C79;
+    margin-bottom: 10px;
+}
+
+.addonskit-pricing-info ul li:last-child{
+    margin-bottom: 0;
+}
+
+.addonskit-pricing-info ul li svg{
+    width: 14px;
+    margin-top: -3px;
+}
+
+.addonskit-icon-placement-left li svg {
+    margin-right: 15px;
+    
+}
+
+.addonskit-icon-placement-right li svg {
+    margin-left: 15px;
+}
+
+.addonskit-pricing.style-1 .addonskit-pricing-footer {
+    padding: 0 40px 40px;
+}
+
+.addonskit-pricing-footer a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px;
+    border: 1px solid #E7E7EB;
+    border-radius: 45px;
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #221F3F;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+.addonskit-pricing-footer a::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(80.07deg, #47479F 0%, #9191D7 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.addonskit-pricing-footer a:hover::before{
+    opacity: 1;
+}
+
+.addonskit-pricing-footer a:hover{
+    color: #fff;
+}
+
+.addonskit-pricing-footer a svg{
+    width: 12px;
+    transition: fill 0.3s ease;
+}
+
+.addonskit-pricing-footer a:hover svg{
+    fill: #fff
+}
+
+.addonskit-pricing-footer a.link-icon-align-right svg{
+    margin-left: 15px;
+}
+
+.addonskit-pricing-footer a.link-icon-align-left svg{
+    margin-right: 15px;
+}
