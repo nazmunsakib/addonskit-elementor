@@ -1,0 +1,92 @@
+.addonskit-service-list-item {
+    margin-bottom: 75px;
+}
+
+.addonskit-servce-list-inner {
+    border: 1px solid #E7E7EB;
+    border-radius: 10px;
+    padding: 40px 40px 30px;
+}
+
+.addonskit-service-content {
+    margin-top: 15px;
+}
+
+.addonskit-service-icon {
+    margin-top: -85px;
+}
+
+h2.addonskit-service-title {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #221F3F;
+    margin-bottom: 15px;
+}
+
+.addonskit-service-content p {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6D6C79;
+}
+
+.addonskit-service-link-area {
+    margin-top: 15px;
+}
+
+.addonskit-service-link-area .addonskit-service-read-more {
+    display: inline-block;
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    text-transform: capitalize;
+    color: #221F3F;
+    transition: all 0.3s ease;
+}
+
+.addonskit-service-link-area .addonskit-service-read-more:hover{
+    color: #5151a6;
+}
+
+.addonskit-service-link-area .addonskit-service-read-more svg {
+    width: 8px;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.addonskit-service-link-area .addonskit-service-read-more:hover svg{
+    fill: #5151a6;;
+}
+
+.service-icon-left .addonskit-servce-list-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px 25px;
+    background: #fff;
+}
+
+.service-icon-left .addonskit-service-icon {
+    margin-top: 0;
+    width: 65px;
+}
+
+.service-icon-left .addonskit-service-content {
+    width: calc(100% - 65px);
+    padding-left: 25px;
+    margin: 0;
+}
+
+.service-icon-top-right .addonskit-service-icon{
+    text-align: right;
+}
+
+.service-icon-top-right .addonskit-servce-list-inner{
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+}
+
