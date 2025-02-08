@@ -1,6 +1,6 @@
 <?php
 
-namespace AddonsKit\Elementor;
+namespace AddonsKitElementor\Classes;
 
 defined('ABSPATH') || die();
 
@@ -100,5 +100,3 @@ class Assets_Manager {
 	}
 
 }
-
-Assets_Manager::init();

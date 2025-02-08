@@ -16,7 +16,12 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-defined('ABSPATH') || die();
+ defined('ABSPATH') || die();
+
+ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+     require_once __DIR__ . '/vendor/autoload.php';
+ }
+ 
 
 /**
  * Defining plugin constants.
@@ -71,8 +76,7 @@ function addonskit_start(){
         return;
     }
 
-    require ADDONSKIT_DIR_PATH . 'Addons_Kit.php';
-    \AddonsKit\Elementor\Addons_Kit::instance();
+    AddonsKitElementor\Classes\Addons_Kit::instance();
 }
 
 add_action('plugins_loaded', 'addonskit_start');

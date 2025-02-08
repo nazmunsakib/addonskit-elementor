@@ -5,7 +5,7 @@
  *
  * @package AddonsKit
  */
-namespace AddonsKit\Elementor\Widget;
+namespace AddonsKitElementor\Addons;
 
 use \Elementor\Controls_Manager;
 use \Elementor\Group_Control_Background;

@@ -4,7 +4,7 @@
  *
  * @package AddonsKit
  */
-namespace AddonsKit\Elementor;
+namespace AddonsKitElementor\Classes;
 
 use Elementor\Controls_Manager;
 use Elementor\Elements_Manager;
@@ -82,8 +82,8 @@ final class Addons_Kit {
 	}
 
 	public function includes() {
-		include_once( ADDONSKIT_DIR_PATH . 'includes/classes/Addons_Manager.php' );
-		include_once( ADDONSKIT_DIR_PATH . 'includes/assets-manager.php' );
+		Addons_Manager::init();
+		Assets_Manager::init();
     }
 
     /**
