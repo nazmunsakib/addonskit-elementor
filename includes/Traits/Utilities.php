@@ -1,10 +1,10 @@
 <?php
 
-namespace AddonsKitElementor\Classes;
+namespace AddonsKitElementor\Traits;
 
 defined( 'ABSPATH' ) || die();
 
-class Helper{
+trait Utilities{
 
 	public const ALLOWED_HTML_TAGS = [
 		'a',
@@ -43,7 +43,7 @@ class Helper{
 	 *
 	 * @param string $tag
 	 */
-	public static function print_validated_html_tag( $tag ) {
+	public static function print_html_tag( $tag ) {
 		// PHPCS - the method validate_html_tag is safe.
 		echo self::validate_html_tag( $tag ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
