@@ -59,6 +59,34 @@ class Assets_Manager {
 			ADDONSKIT_PLUGIN_VERSION
 		);
 
+		wp_register_style(
+			'addonskit-animation',
+			ADDONSKIT_ASSETS . '/css/addonskit-animation.css',
+			null,
+			ADDONSKIT_PLUGIN_VERSION
+		);
+
+		wp_register_script(
+			'gsap',
+			ADDONSKIT_ASSETS . 'js/gsap.min.js',
+			[],
+			'3.2.3'
+		);
+
+		wp_register_script(
+			'anime',
+			ADDONSKIT_ASSETS . 'js/anime.min.js',
+			[],
+			'2.0.2'
+		);
+
+		wp_register_script(
+			'addonskit-animation',
+			ADDONSKIT_ASSETS . 'js/addonskit-animation.js',
+			['gsap', 'anime'],
+			ADDONSKIT_PLUGIN_VERSION
+		);
+
 
 	}
 

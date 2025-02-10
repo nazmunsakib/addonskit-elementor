@@ -23,6 +23,7 @@ class Addons_Manager {
       \AddonsKitElementor\Addons\Special_Heading::class,
       \AddonsKitElementor\Addons\Section_Title::class,
       \AddonsKitElementor\Addons\Pricing_Table::class,
+      \AddonsKitElementor\Addons\Animated_Heading::class,
     ];
 
     /**

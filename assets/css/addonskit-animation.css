@@ -1,0 +1,28 @@
+.ake-lift-fade {
+    position: relative;
+}
+.ake-lift-fade .ake-text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+.ake-lift-fade .ake-letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.ake-slide-fade {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+}
+  
+.ake-slide-fade .ake-letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
