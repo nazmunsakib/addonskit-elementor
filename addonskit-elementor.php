@@ -4,9 +4,10 @@
  * Description: The AddonsKit plugin you install after Elementor!
  * Plugin URI: https://addonskit.com/
  * Author: nazmunsakib
- * Version: 1.0.0
- * Requires at least: 6.0
- * Requires PHP: 7.4
+ * Version: 1.0.1
+ * Requires at least: 4.4
+ * Tested up to: 6.5
+ * Requires PHP: 5.6
  * Author URI: https://nazmunsakib.com/
  * Text Domain: addonskit-elementor
  * Domain Path: /languages
